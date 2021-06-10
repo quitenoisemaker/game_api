@@ -23,6 +23,9 @@ class GameApiFactory extends Factory
     {
         return [
             //
+
+            'name' => $this->faker->word,
+            'version' => $this->faker->numberBetween(1, 10)
         ];
     }
 }

@@ -23,6 +23,13 @@ class PlayerFactory extends Factory
     {
         return [
             //
+
+            'name' => $this->faker->name,
+            'email' => $this->faker->email,
+            'nickname' => $this->faker->userName,
+            'password' => $this->faker->password,
+            'last_login' => $this->faker->dateTime($max = 'now', $timezone = null)
+
         ];
     }
 }
